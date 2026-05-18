@@ -8,15 +8,13 @@ import { ROOMS } from "./data";
 
 function Hero() {
   return (
-    <div className="relative overflow-hidden py-8 sm:py-16 px-4 text-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-pink/6 via-purple/4 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(124,58,237,0.08)_0%,_transparent_60%)]" />
-      <div className="relative z-10">
+    <div className="py-8 sm:py-16 px-4 text-center">
+      <div>
         <p className="text-purple/60 text-xs sm:text-sm font-heading tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
           Las Vegas · May 22–25, 2026
         </p>
         <div className="bulb-border inline-block px-4 sm:px-8 py-3 sm:py-5 mb-4 sm:mb-5">
-          <h1 className="font-display text-5xl sm:text-8xl font-normal tracking-wide text-pink">
+          <h1 className="font-display text-5xl sm:text-8xl font-normal tracking-wide">
             Fran's Bach Bash
           </h1>
         </div>

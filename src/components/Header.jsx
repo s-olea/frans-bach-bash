@@ -11,7 +11,7 @@ export default function Header({ active, onNavigate }) {
       <header className="sticky top-0 z-50 bg-bg/90 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-4 py-2.5 sm:py-3 flex items-center gap-4 sm:gap-6">
           <h1
-            className="font-display text-2xl sm:text-3xl text-pink cursor-pointer whitespace-nowrap"
+            className="font-display text-xl sm:text-2xl cursor-pointer whitespace-nowrap"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Fran's Bach Bash 🎰

@@ -37,7 +37,7 @@ export default function Recommendations() {
 
   return (
     <section id="recommendations" className="max-w-4xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
-      <h2 className="font-display text-3xl sm:text-5xl text-gold text-center mb-4 sm:mb-6">
+      <h2 className="font-display text-3xl sm:text-5xl text-center mb-4 sm:mb-6">
         Recommendations
       </h2>
       <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 justify-center items-center mb-4 sm:mb-6">

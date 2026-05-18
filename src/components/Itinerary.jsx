@@ -79,7 +79,7 @@ export default function Itinerary() {
 
   return (
     <section id="itinerary" className="max-w-3xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
-      <h2 className="font-display text-3xl sm:text-5xl text-pink text-center mb-4 sm:mb-6">
+      <h2 className="font-display text-3xl sm:text-5xl text-center mb-4 sm:mb-6">
         Itinerary
       </h2>
       {/* Horizontally scrollable day tabs on mobile */}

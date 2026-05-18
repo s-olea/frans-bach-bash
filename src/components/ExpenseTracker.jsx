@@ -225,7 +225,7 @@ export default function ExpenseTracker() {
 
   return (
     <section id="expenses" className="max-w-4xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
-      <h2 className="font-display text-3xl sm:text-5xl text-neon text-center mb-1.5 sm:mb-2">
+      <h2 className="font-display text-3xl sm:text-5xl text-center mb-1.5 sm:mb-2">
         Expenses
       </h2>
       <div className="text-center mb-4 sm:mb-6 space-y-1">

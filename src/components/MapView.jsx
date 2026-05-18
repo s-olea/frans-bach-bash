@@ -8,7 +8,7 @@ function createIcon(color) {
     className: "",
     html: `<div style="
       width:32px;height:32px;border-radius:50%;
-      background:#ffffff;border:2px solid ${color};
+      background:#151515;border:2px solid ${color};
       display:flex;align-items:center;justify-content:center;
       box-shadow:0 0 10px ${color}44;
       font-size:14px;color:${color};font-weight:bold;
@@ -34,7 +34,7 @@ export default function MapView() {
 
   return (
     <section id="map" className="max-w-5xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
-      <h2 className="font-display text-3xl sm:text-5xl text-purple text-center mb-4 sm:mb-6">
+      <h2 className="font-display text-3xl sm:text-5xl text-center mb-4 sm:mb-6">
         Map
       </h2>
       <div className="flex gap-1.5 sm:gap-2 justify-center mb-3 sm:mb-4 overflow-x-auto no-scrollbar">
@@ -64,7 +64,7 @@ export default function MapView() {
         >
           <TileLayer
             attribution='&copy; <a href="https://carto.com">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/voyager/{z}/{x}/{y}{r}.png"
+            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
           {filtered.map((venue, i) => (
             <Marker
