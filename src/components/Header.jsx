@@ -16,7 +16,7 @@ export default function Header({ active, onNavigate }) {
           >
             Fran's Bach Bash 🎰
           </h1>
-          <span className="hidden sm:block text-purple/50 text-sm font-heading tracking-widest uppercase">
+          <span className="hidden sm:block text-text/35 text-sm font-medium tracking-wide">
             Las Vegas · May 22–25
           </span>
           <nav className="hidden sm:flex gap-2 ml-auto">

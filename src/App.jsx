@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div className="py-8 sm:py-16 px-4 text-center">
       <div>
-        <p className="text-purple/60 text-xs sm:text-sm font-heading tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4">
+        <p className="text-text/40 text-sm sm:text-base font-medium tracking-wide mb-3 sm:mb-4">
           Las Vegas · May 22–25, 2026
         </p>
         <div className="bulb-border inline-block px-4 sm:px-8 py-3 sm:py-5 mb-4 sm:mb-5">
