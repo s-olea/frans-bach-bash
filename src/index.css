@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #fef7f0;
+  --color-gold: #d4a017;
+  --color-red: #e0245e;
+  --color-text: #2d2235;
+  --color-neon: #0891b2;
+  --color-pink: #d6336c;
+  --color-purple: #7c3aed;
+  --color-card: #ffffff;
+  --color-card-hover: #faf5ff;
+  --color-border: #e8dff0;
+  --font-display: "Great Vibes", cursive;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 56px;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: contain;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+input, select, textarea {
+  font-size: 16px !important;
+}
+
+/* Vegas shimmer on title */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #d6336c 0%,
+    #7c3aed 20%,
+    #d4a017 40%,
+    #d6336c 60%,
+    #7c3aed 80%,
+    #d4a017 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+/* Marquee bulb lights */
+@keyframes bulbs {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.bulb-border {
+  position: relative;
+}
+.bulb-border::before {
+  content: "✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: 4px;
+  color: #d4a017;
+  text-shadow: 0 0 6px #d4a01788, 0 0 12px #d4a01744;
+  animation: bulbs 1.5s ease-in-out infinite;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bulb-border::after {
+  content: "✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: 4px;
+  color: #d6336c;
+  text-shadow: 0 0 6px #d6336c88, 0 0 12px #d6336c44;
+  animation: bulbs 1.5s ease-in-out infinite 0.75s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Subtle glow on light bg */
+.neon-glow {
+  text-shadow: 0 0 7px currentColor, 0 0 14px currentColor;
+}
+
+.neon-glow-subtle {
+  text-shadow: 0 0 4px currentColor;
+}
+
+.neon-box {
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.1), 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Leaflet light theme */
+.leaflet-container {
+  background: #fef7f0 !important;
+  border-radius: 12px;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #2d2235 !important;
+  border: 1px solid #e8dff0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 20px rgba(124, 58, 237, 0.06) !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+  border: 1px solid #e8dff0 !important;
+}
+
+.leaflet-popup-close-button {
+  color: #2d2235 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef7f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8cce4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c4b5d6;
+}
